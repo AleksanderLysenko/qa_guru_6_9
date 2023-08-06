@@ -37,7 +37,7 @@ def should_see_issue_with_number(number):
 @allure.label("owner", "lysenko")
 @allure.feature("Задачи в репозитории")
 @allure.story("test_decorator_steps")
-def test_decorator_steps():
+def test_decorator_steps(browser_size):
     open_main_page()
     search_for_repository("eroshenkoam/allure-example")
     go_to_repository("eroshenkoam/allure-example")

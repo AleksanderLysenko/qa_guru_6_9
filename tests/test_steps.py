@@ -10,7 +10,7 @@ from selene.support.shared import browser
 @allure.label("owner", "lysenko")
 @allure.feature("Задачи в репозитории")
 @allure.story("test_steps")
-def test_allure_steps_github():
+def test_allure_steps_github(browser_size):
     with allure.step("Открываем главную страницу"):
         browser.open("https://github.com")
 
